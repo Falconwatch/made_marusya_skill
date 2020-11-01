@@ -48,7 +48,7 @@ def main():
 		text = 'Картинка'
 		card = {
           "type":"BigImage",
-          "image_id":457239019,
+          "image_id":457239017,
           # "title": "Заголовок для изображения",
           # "description": "Описание изображения"
 		} 
@@ -57,7 +57,7 @@ def main():
 		text = 'Карусель'
 		card = {
 			"type": "ItemsList",
-			"items": [{"image_id":457239018}, {"image_id":457239019}, {"image_id":457239017}],
+			"items": [{"image_id":457239020}, {"image_id":457239018}, {"image_id":457239019}],
 			# "title": "Заголовок для изображения",
 			# "description": "Описание изображения"
 		} 
