@@ -45,7 +45,7 @@ def main():
 		text = 'Привет!'
 
 	elif request.json['request']['command'] == 'картинка':
-		text = 'Картиночка'
+		text = 'Картинка'
 		card = {
           "type":"BigImage",
           "image_id":457239019,
@@ -54,7 +54,7 @@ def main():
 		} 
 
 	elif request.json['request']['command'] == 'карусель':
-		text = 'Каруселечка'
+		text = 'Карусель'
 		card = {
 			"type": "ItemsList",
 			"items": [{"image_id":457239018}, {"image_id":457239019}, {"image_id":457239017}],
@@ -63,8 +63,8 @@ def main():
 		} 
 
 	elif request.json['request']['command'] == 'кнопки':
-		text = 'Кнопочки'
-		buttons = [{'title':"blue pill"}, {"title":"red pill"}]
+		text = 'Быть или не быть?'
+		buttons = [{'title':"Быть"}, {"title":"Не быть"}]
 
 	else:
 		text = request.json['request']['command']
