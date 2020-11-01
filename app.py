@@ -66,6 +66,9 @@ def main():
 		text = 'Быть или не быть?'
 		buttons = [{'title':"Быть"}, {"title":"Не быть"}]
 
+	elif request.json['request']['command'] == 'мудрость':
+		text = 'Всё проходит, и это пройдёт'
+
 	else:
 		text = request.json['request']['command']
 	response = {
